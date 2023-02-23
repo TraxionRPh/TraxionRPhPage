@@ -1,3 +1,14 @@
 body {
     background-color: #cd950e;
+    font-family: 'Terminal', 'Times New Roman';
+    color: #587d49;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#banner {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
