@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-5NR2FPZ');</script>
+	<!-- End Google Tag Manager -->
+		<!-- CSS -->
+		<link href="styles/awesomplete.css" rel="stylesheet">
+		<link href="styles/styleV4.4.css" rel="stylesheet">
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="images/faviconV2/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/faviconV2/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/faviconV2/favicon-16x16.png">
+		<link rel="manifest" href="images/faviconV2/site.webmanifest">
+		<!-- meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Griffin Skaff">
+		<meta name="description" content="Similar to Wordle, you have eight chances to guess the drug name, brand or generic, with hints from the class, indication, and dosage forms.">
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#C3F8F9">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#C3F8F9">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#C3F8F9">
+		<title>Drugle | Test your Top 300 knowledge!</title>
+		<script>var viewport = document.querySelector("meta[name=viewport]");
+			viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);</script>
+	</head>	
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NR2FPZ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+		<header>
+			<!-- Bar graph link to player stats -->
+			<input type="image" src="images/bar_graphV2.webp" id="bar-graph" class="button" alt="bar graph with four bars of varying sizes that links to your statistics">
+			
+			<!-- Toggle switch for normal or unlimited mode-->
+			<div class="switch-button">
+				<input class="switch-button-checkbox" type="checkbox" id="switch"></input>
+				<label class="switch-button-label" for=""><span class="switch-button-label-span">Daily</span></label>
+			</div>
+			
+
+			<!-- Question mark link to how to play -->
+			<input type="image" src="images/question_markV2.webp" id="question-mark" class="button" alt="question mark inside a circle that links to instructions on how to play">
+		</header>
+
+		<main>
+			<div class="title">
+				<h1>Drugle</h1>
+			</div>
+			<div class="subtitle">
+				<p>Like Wordle, but for pharmacy!<br>
+					Test your Top 300 knowledge!</p>
+			</div>
+			
+			<!-- Guess Area-->
+			<div id="guess-area">
+				<input type="text" id="type-guess">
+			</div>
+			<div class="hint">
+				<p id="image-hint">Show Image</p>
+			</div>
+			
+			<!-- table of previous guesses -->
+				<div class="divTable" id="table">
+					<div class="divTableHeading" id="tableHeader">
+							<div class="divTableHead">Brand/Generic Names</div>
+							<div class="divTableHead">Class</div>
+							<div class="divTableHead">Indications</div>
+							<div class="divTableHead">Dosage Forms</div>
+					</div>
+					<div class="divTableBody" id="tableBody">
+						<div class="divTableRow" id="row-1">
+							<div class="divTableCell" id="nameCell-1"></div>
+							<div class="divTableCell" id="classCell-1"></div>
+							<div class="divTableCell" id="indicationCell-1"></div>
+							<div class="divTableCell" id="dosageFormsCell-1"></div>
+						</div>
+						<div class="divTableRow" id="row-2">
+							<div class="divTableCell" id="nameCell-2"></div>
+							<div class="divTableCell" id="classCell-2"></div>
+							<div class="divTableCell" id="indicationCell-2"></div>
+							<div class="divTableCell" id="dosageFormsCell-2"></div>
+						</div>
+						<div class="divTableRow" id="row-3">
+							<div class="divTableCell" id="nameCell-3"></div>
+							<div class="divTableCell" id="classCell-3"></div>
+							<div class="divTableCell" id="indicationCell-3"></div>
+							<div class="divTableCell" id="dosageFormsCell-3"></div>
+						</div>
+						<div class="divTableRow" id="row-4">
+							<div class="divTableCell" id="nameCell-4"></div>
+							<div class="divTableCell" id="classCell-4"></div>
+							<div class="divTableCell" id="indicationCell-4"></div>
+							<div class="divTableCell" id="dosageFormsCell-4"></div>
+						</div>
+						<div class="divTableRow" id="row-5">
+							<div class="divTableCell" id="nameCell-5"></div>
+							<div class="divTableCell" id="classCell-5"></div>
+							<div class="divTableCell" id="indicationCell-5"></div>
+							<div class="divTableCell" id="dosageFormsCell-5"></div>
+						</div>
+						<div class="divTableRow" id="row-6">
+							<div class="divTableCell" id="nameCell-6"></div>
+							<div class="divTableCell" id="classCell-6"></div>
+							<div class="divTableCell" id="indicationCell-6"></div>
+							<div class="divTableCell" id="dosageFormsCell-6"></div>
+						</div>
+						<div class="divTableRow" id="row-7">
+							<div class="divTableCell" id="nameCell-7"></div>
+							<div class="divTableCell" id="classCell-7"></div>
+							<div class="divTableCell" id="indicationCell-7"></div>
+							<div class="divTableCell" id="dosageFormsCell-7"></div>
+						</div>
+						<div class="divTableRow" id="row-8">
+							<div class="divTableCell" id="nameCell-8"></div>
+							<div class="divTableCell" id="classCell-8"></div>
+							<div class="divTableCell" id="indicationCell-8"></div>
+							<div class="divTableCell" id="dosageFormsCell-8"></div>
+						</div>
+					</div>
+				</div>
+
+			
+			<!-- Question mark modal -->
+			<div id="question-mark-popup" class="modal">
+				<div class="modal-content" id="question-mark-content">
+					<span class="close" id="question-close">&times;</span>
+					<h2 id="instruction-title">Guess the correct Top 300 Drug!</h2>
+					<ul class="list">
+						<li class="item">You get eight guesses</li>
+						<li class="item">Guesses can be the brand or generic name</li>
+						<li class="item">The class, indication, and dosage forms of your guess will give you hints</li>
+						<li class="item"><span class="bold" id="green">Green</span> means it's a match!</li>
+						<li class="item"><span class="bold" id="yellow">Yellow</span> means part of the section matches, and the matches will be in <span class="bold">BOLD</span></li>
+						<li class="item">If you need help, check the image for a hint!</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Bar graph modal -->
+			<div id="graph-popup" class="modal">
+				<div class="modal-content" id="graph-content">
+					<span class="close" id="graph-close">&times;</span><br>
+					<div class="stat"><span id="games-played"></span><br>Games Played</div>
+					<div class="stat"><span id="win-percentage"></span><br>Win Percentage</div>
+					<div class="stat"><span id="current-streak"></span><br>Current Streak</div>
+					<div class="stat"><span id="max-streak"></span><br>Longest Streak</div>
+					<!-- graph itself-->
+					<div class="graph">
+						<div class="bar" id="oneGuess"><span class="guessNumber" id="one"></span></div>
+						<div class="bar" id="twoGuess"><span class="guessNumber" id="two"></span></div>
+						<div class="bar" id="threeGuess"><span class="guessNumber" id="three"></span></div>
+						<div class="bar" id="fourGuess"><span class="guessNumber" id="four"></span></div>
+						<div class="bar" id="fiveGuess"><span class="guessNumber" id="five"></span></div>
+						<div class="bar" id="sixGuess"><span class="guessNumber" id="six"></span></div>
+						<div class="bar" id="sevenGuess"><span class="guessNumber" id="seven"></span></div>
+						<div class="bar" id="eightGuess"><span class="guessNumber" id="eight"></span></div>
+					</div>
+					<div id="labels">
+						<div class="label">1</div>
+						<div class="label">2</div>
+						<div class="label">3</div>
+						<div class="label">4</div>
+						<div class="label">5</div>
+						<div class="label">6</div>
+						<div class="label">7</div>
+						<div class="label">8</div>
+					</div>
+					<div id="guessLabel">Guess Distribution</div>
+				</div>
+			</div>
+			
+			<!-- Image hint modal -->
+			<div id="image-hint-popup" class="modal">
+				<div class="modal-content" id="image-hint-content-enter">
+					<span class="close" id="image-close">&times;</span>
+					<div id="image-blur"></div><br>
+					<p id="identify">Can you identify this drug?</p>
+				</div>
+			</div>
+			
+			<!-- Wrong modal -->
+			<div id="game-over-popup" class="modal">
+				<div class="modal-content" id="wrong-content-enter">
+					<span class="close" id="lose-close">&times;</span>
+					<p id="wrong">Sorry, you didn't guess correctly!</p>
+					<div id="wrong-answer-image"></div>
+					<div id="wrongAnswer"></div>
+				</div>
+			</div>
+			
+			<!-- Correct modal -->
+			<div id="correct-popup" class="modal">
+				<div class="modal-content" id="correct-content-enter">
+					<span class="close" id="win-close">&times;</span>
+					<p id="correct">You got it!</p><br>
+					<div id="correct-answer-image"></div>
+					<div id="correctAnswer"></div>
+					<div id="shareResults"><input type="image" src="images/shareV2.webp" id="share" class="button" alt="center circle with two diagonal lines ending in identical circles surrounded by a larger circle with text to the right that says share"></div>
+				</div>
+			</div>
+			<div id="copybox" class="fadeOut">Result copied to clipboard<br>
+							Share with your friends!</div>
+		</main>
+
+		<footer>
+			<div id="update"><a href='https://play.google.com/store/apps/details?id=com.TraxionRPh.Drugle&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src="images/google-play-badge.png" class="badge"/></a><a href='https://apps.apple.com/app/drugle/id1661359629'><img alt='Get it on Apple App Store' src="images/app-store-badge.png" class="badge" id="apple-badge"/></a></div>
+			<div id="acknowledgements">Inspired by <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Wordle</a> and its<br> NBA-themed clone <a href="https://poeltl.dunk.town/" target="_blank">Poeltl</a></div>
+		</footer>
+			<!-- JavaScript -->
+<script src="scripts/awesomplete.js"></script>
+<script src="scripts/druginfoV4.js"></script>
+<script src="scripts/mainV5.1.js"></script>
+	</body>
+</html>
