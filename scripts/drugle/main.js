@@ -121,8 +121,8 @@ var printAnswerDrug = listDrugs[answerDrugIndexNumber];
 var answerClassIndex = drugClass[answerDrugIndexNumber]; /* answer class in array */
 var answerIndicationIndex = drugIndication[answerDrugIndexNumber]; /* answer indication in array */
 var answerDosageFormsIndex = drugDosageForms[answerDrugIndexNumber]; /* answer dosage forms in array */
-var answerDrugImage = '<img class="images" src="images/answers/index' + answerDrugIndexNumber + 'AnswerV1.webp">';
-var answerHintImage = '<img class="images" src="images/hints/index' + answerDrugIndexNumber + 'HintV1.webp">';
+var answerDrugImage = '<img class="images" src="images/drugle/answers/index' + answerDrugIndexNumber + 'AnswerV1.webp">';
+var answerHintImage = '<img class="images" src="images/drugle/hints/index' + answerDrugIndexNumber + 'HintV1.webp">';
 addNormalPictures();
 
 let currentGuessUnlimited = 1;
@@ -172,8 +172,8 @@ box.addEventListener("change", (e) => {
         answerClassIndexUnlimited = drugClass[answerDrugIndexNumberUnlimited];
         answerIndicationIndexUnlimited = drugIndication[answerDrugIndexNumberUnlimited];
         answerDosageFormsIndexUnlimited = drugDosageForms[answerDrugIndexNumberUnlimited];
-        answerDrugImageUnlimited = '<img class="images" src="images/answers/index' + answerDrugIndexNumberUnlimited + 'AnswerV1.webp">';
-        answerHintImageUnlimited = '<img class="images" src="images/hints/index' + answerDrugIndexNumberUnlimited + 'HintV1.webp">';
+        answerDrugImageUnlimited = '<img class="images" src="images/drugle/answers/index' + answerDrugIndexNumberUnlimited + 'AnswerV1.webp">';
+        answerHintImageUnlimited = '<img class="images" src="images/drugle/hints/index' + answerDrugIndexNumberUnlimited + 'HintV1.webp">';
         addUnlimitedPictures();
         document.getElementById("table").innerHTML = JSON.parse(localStorage.getItem("unlimitedTableBase"));
         document.getElementById("table").style.display = "none";
