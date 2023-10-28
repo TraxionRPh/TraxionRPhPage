@@ -44,12 +44,6 @@ footer {
 	color: #C3F8F9;
 }
 
-#acknowledgements {
-	float: right;
-	text-align: right;
-	margin-top: -8.5%;
-}
-
 #update {
 	float: left;
 	text-align: left;
@@ -637,11 +631,6 @@ input:disabled {
 		height: 5%;
 	}
 
-	#acknowledgements {
-		font-size: 0.5rem;
-		margin-right: 1.5%;
-	}
-
 	#update {
 		font-size: 0.5rem;
 		margin-top: 3%;
@@ -845,11 +834,6 @@ input:disabled {
 		height: 7%;
 	}
 
-	#acknowledgements {
-		font-size: 1rem;
-		margin-right: 2%;
-	}
-
 	#update {
 		font-size: 1rem;
 		margin-top: 1%;
@@ -1045,11 +1029,6 @@ input:disabled {
 	/* Footer */
 	footer {
 		height: 7%;
-	}
-
-	#acknowledgements {
-		font-size: 1rem;
-		margin-right: 2%;
 	}
 
 	#update {
@@ -1248,11 +1227,6 @@ input:disabled {
 	/* Footer */
 	footer {
 		height: 5%;
-	}
-
-	#acknowledgements {
-		font-size: 1rem;
-		margin-right: 2%;
 	}
 
 	#update {
@@ -1454,11 +1428,6 @@ input:disabled {
 		height: 7%;
 	}
 
-	#acknowledgements {
-		font-size: 1rem;
-		margin-right: 1%;
-	}
-
 	#update {
 		font-size: 1rem;
 		margin-top: 1%;
@@ -1658,11 +1627,6 @@ input:disabled {
 	/* Footer */
 	footer {
 		height: 7%;
-	}
-
-	#acknowledgements {
-		font-size: 1rem;
-		margin-right: 1%;
 	}
 
 	#update {
