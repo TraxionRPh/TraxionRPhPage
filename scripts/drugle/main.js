@@ -7,9 +7,6 @@ if (JSON.parse(localStorage.getItem("gamesPlayed")) === null || JSON.parse(local
 	localStorage.setItem("gamesPlayed", 0);
 	document.getElementById("games-played").innerHTML = 0;
 	document.getElementById("win-percentage").innerHTML = 0 + "%";
-} else {
-	let winPercentage = JSON.parse(localStorage.getItem("gamesWon")) / JSON.parse(localStorage.getItem("gamesPlayed")) * 100;
-	document.getElementById("win-percentage").innerHTML = winPercentage.toPrecision(3) + "%";
 }
 if (JSON.parse(localStorage.getItem("gamesWon")) === null) {
 	localStorage.setItem("gamesWon", 0);
@@ -59,6 +56,8 @@ if (localStorage.getItem("winToday") === null) {
 if (JSON.parse(localStorage.getItem("currentGuess")) === null) {
 	localStorage.setItem("currentGuess", 1);
 }
+let winPercentage = JSON.parse(localStorage.getItem("gamesWon")) / JSON.parse(localStorage.getItem("gamesPlayed")) * 100;
+document.getElementById("win-percentage").innerHTML = winPercentage.toPrecision(3) + "%";
 graphHeights();
 
 function restoreNormalMode() {
@@ -235,6 +234,16 @@ if (localStorage.getItem("winToday") === "yes") {
 	guessArea.value = "";
 	guessArea.placeholder = "Great job!";
 };
+
+// Back Arrow
+var backArrow = document.getElementById("arrow");
+
+backArrow.onclick = function() {
+    window.history.go(-1);
+    if (window.history.go(-1) == undefinded) {
+        window.location.href = "../index.html";
+    }
+}
 
 // Bar Graph Modal
 var modalGraph = document.getElementById("graph-popup");
