@@ -239,11 +239,8 @@ if (localStorage.getItem("winToday") === "yes") {
 var backArrow = document.getElementById("arrow");
 
 backArrow.onclick = function() {
-    window.history.go(-1);
-    if (window.history.go(-1) == undefinded) {
-        window.location.href = "../index.html";
+        window.history.back();
     }
-}
 
 // Bar Graph Modal
 var modalGraph = document.getElementById("graph-popup");
